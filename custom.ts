@@ -1,29 +1,19 @@
 
 /**
 * Utilisez ce fichier pour définir des fonctions et des blocs personnalisés.
-* En savoir plus à https://makecode.microbit.org/blocks/custom
-*/
-
-enum MyEnum {
-    //% block="one"
-    One,
-    //% block="two"
-    Two
-}
-
 /**
- * Custom blocks
+ * animations blocks
  */
-//% weight=100 color=#0fbc11 icon=""
-namespace custom {
+//% weight=80 color=#0fbc11 icon=""
+namespace animations {
     /**
      * TODO: describe your function here
      * @param n describe parameter here, eg: 5
      * @param s describe parameter here, eg: "Hello"
      * @param e describe parameter here
      */
-    //% block="do stuff with $n and $s and $e"
-    export function dostuff(n: number, s: string, e: MyEnum): void {
+    //% block="blink x $x $y every $interval  ms"
+    export function blink(x: number, y: number, interval: number): void {
         // Add code here
     }
 
